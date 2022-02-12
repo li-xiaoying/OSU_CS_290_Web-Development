@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<!-- Xiaoying Li -->
+<!-- CS290 Project -->
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+
+<body>
+    <!-- A form either submit via get or post -->
+    <div class="survey">
+        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+            <fieldset>
+                <legend>Thanks for visiting my web, here is a short survey:</legend>
+                <br />
+                <fieldset>
+                    <p>
+                        1. Do you like my cats?
+                        <br />
+                        <label>
+                            <input type="radio" name="like" value="Yes" />Yes
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="like" value="No" />No
+                        </label>
+                        <br />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <p>
+                        2. Which cat do you like better?
+                        <br />
+                        <label>
+                            <input type="radio" name="better" value="Dapang" />Dapang
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="better" value="Erpang" />Erpang
+                        </label>
+                        <br />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <p>
+                        3. Do you have cats?
+                        <br />
+                        <label>
+                            <input type="radio" name="have" value="Yes" />Yes
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="have" value="No" />No
+                        </label>
+                        <br />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <p>
+                        4. If you have a cat, did you adopt him? If you don't have a cat, will you adopt one in the future?
+                        <br />
+                        <label>
+                            <input type="radio" name="adopt" value="Yes" />Yes
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="adopt" value="No" />No
+                        </label>
+                        <br />
+                    </p>
+                </fieldset>
+                <br />
+                <input type="submit" value="Submit" />
+                <br />
+            </fieldset>
+        </form>
+    </div>
+    <br />
+
+    <!-- Refer to https://www.w3schools.com/css/css_navbar.asp -->
+    <!-- A horizontal menu that leads to the other pages -->
+    <div class="menu">
+        <ul style="list-style-type:none;">
+            <li class="page"><a href="index.html">Home</a></li>
+            <li class="page"><a href="subpage1.html">Dapang</a></li>
+            <li class="page"><a href="subpage2.html">Erpang</a></li>
+            <li class="current page"><a href="subpage3.html">Survey</a></li>
+        </ul>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

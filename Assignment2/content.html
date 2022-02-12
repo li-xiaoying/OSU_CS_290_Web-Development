@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--Xiaoying Li-->
+<!--CS290 HW Assignment 2: HTML/CSS-->
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Xiaoying Li CS290 HW Assignment2</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <table>
+            <caption>Who wins? Cell content indicates the status of the row entry.</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Godzilla</th>
+                    <th>Batman</th>
+                    <th>Shap</th>
+                    <th>Aaron Carter</th>
+                    <th>Abe Lincoln</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><em>Godzilla</em></th>
+                    <td>N/A</td>
+                    <td>Minor Loss</td>
+                    <td>Loss</td>
+                    <td>Unknown</td>
+                    <td>Unknown</td>
+                </tr>
+                <tr>
+                    <th><em>Batman</em></th>
+                    <td>Minor Win</td>
+                    <td>N/A</td>
+                    <td>Total Victory</td>
+                    <td>Total Victory</td>
+                    <td>Total Loss</td>
+                </tr>
+                <tr>
+                    <th><em>Shaq</em></th>
+                    <td>Win</td>
+                    <td>Total loss</td>
+                    <td>N/A</td>
+                    <td>Minor Loss</td>
+                    <td>Unknown</td>
+                </tr>
+                <tr>
+                    <th><em>Aaron Carter</em></th>
+                    <td>Unknown</td>
+                    <td>Total Loss</td>
+                    <td>Minor Win</td>
+                    <td>N/A</td>
+                    <td>Unknown</td>
+                </tr>
+                <tr>
+                    <th><em>Abe Lincoln</em></th>
+                    <td>Unknown</td>
+                    <td>Total Victory</td>
+                    <td>Unknown</td>
+                    <td>Unknown</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Footer 1</td>
+                    <td colspan="4">Footer 2</td>
+                </tr>
+            </tfoot>
+        </table>
+        <dl>
+            <dt>Best Language</dt>
+            <dd>Python</dd>
+            <dt>Wackiest Language</dt>
+            <dd>Haskell</dd>
+            <dt>Segfaultiest Language</dt>
+            <dd>C</dd>
+        </dl>
+        <div class="outer-content">
+            <div class="inner-content">Here is some content.</div>
+        </div>
+        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+            <fieldset>
+                <legend>Some Post Data</legend>
+                <br />
+                <fieldset>
+                    <label>
+                        Text here:
+                        <input type="text" name="text_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <label>
+                        Number here:
+                        <input type="number" name="numerical_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <label>
+                        Password here:
+                        <input type="password" name="password_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <p>
+                        Select between:
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Snickers" />Snickers
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Skittles" />Skittles
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Mentos" />Mentos
+                        </label>
+                        <br />
+                    </p>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+                <br />
+            </fieldset>
+        </form>
+        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+            <fieldset>
+                <legend>Some Get Data</legend>
+                <br />
+                <fieldset>
+                    <label>
+                        Text here:
+                        <input type="text" name="text_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <label>
+                        Number here:
+                        <input type="number" name="numerical_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <label>
+                        Password here:
+                        <input type="password" name="password_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <p>
+                        Select between:
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Snickers" />Snickers
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Skittles" />Skittles
+                        </label>
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Mentos" />Mentos
+                        </label>
+                        <br />
+                    </p>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+                <br />
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<h2>Add an exercise:</h2>
+<fieldset>
+    Name:
+    <input type="text" name="exercise" id="exercise">
+    Reps:
+    <input type="number" name="reps" id="reps" min="1">
+    Weight:
+    <input type="number" name="weight" id="weight" min="1">
+    Date:
+    <input type="date" name="date" id="date"/>
+    LBS:
+    <input type="checkbox" name="unitCheck" id="unitCheck">
+    <Button name="Add Exercise" id="addExerciseButton">add</Button>
+</fieldset>
+<br>
+<br>
+
+
+<h2>Completed exercises:</h2>
+<fieldset>
+    <table id="exerciseTable">
+        <tr>
+            <th>Name</th>
+            <th>Reps</th>
+            <th>Weight</th>
+            <th>Date</th>
+            <th>Unit</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        {{#if results}}
+        {{#each results}}
+        <tr id="tr{{this.id}}">
+            <td> <input type="text" id="exercise_{{this.id}}" name="exercise_{{this.id}}" value="{{this.name}}"></td>
+            <td> <input type="text" id="reps_{{this.id}}" name="reps_{{this.id}}" value="{{this.reps}}"></td>
+            <td> <input type="text" id="weight_{{this.id}}" name="weight_{{this.id}}" value="{{this.weight}}"></td>
+            <td> <input type="date" id="date_{{this.id}}" name="date_{{this.id}}" value="{{this.date}}"></td>
+
+            {{#if this.lbs}}
+            <td><input type="checkbox" name="lbsCheck_{{this.id}}" id="unitCheck_{{this.id}}" checked="checked"></td>
+            {{else}}
+            <td><input type="checkbox" name="lbsCheck_{{this.id}}" id="unitCheck_{{this.id}}"></td>
+            {{/if}}
+            <td><button type="button" row="{{this.id}}" class="update_btn" name="update_btn_{{this.id}}" id="update_btn_{{this.id}}">update</button></td>
+            <td><button type="button" row="{{this.id}}" class="delete_btn" name="delete_btn_{{this.id}}" id="delete_btn_{{this.id}}">delete</button></td>
+
+            <input type ="hidden"  name="id"  value={{this.id}}>
+        </tr>
+        {{/each}}
+        {{/if}}
+    </table>
+</fieldset>
+
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/action.js"></script>
